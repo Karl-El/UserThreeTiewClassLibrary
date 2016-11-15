@@ -11,7 +11,7 @@ namespace DataAccessLayer
 {
     public class DataAccessUser
     {
-        SqlConnection Con = new SqlConnection(ConfigurationManager.ConnectionStrings["CnnStrng"].ConnectionString);
+        SqlConnection Con = new SqlConnection(ConfigurationManager.ConnectionStrings["CnnctStrng"].ConnectionString);
 
         public DataSet Select_User()
         {

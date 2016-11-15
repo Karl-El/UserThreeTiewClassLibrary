@@ -67,6 +67,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Font\fontawesome-webfont.eot" />
+    <Content Include="Font\fontawesome-webfont.ttf" />
+    <Content Include="Font\fontawesome-webfont.woff" />
+    <Content Include="Font\fontawesome-webfont.woff2" />
+    <Content Include="Font\FontAwesome.otf" />
+    <Content Include="Font\glyphicons-halflings-regular.eot" />
+    <Content Include="Font\glyphicons-halflings-regular.ttf" />
+    <Content Include="Font\glyphicons-halflings-regular.woff" />
+    <Content Include="Font\glyphicons-halflings-regular.woff2" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,10 +85,48 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\checkbox.css" />
+    <Content Include="Content\darkly.css" />
+    <Content Include="Content\flatly.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\lumen.css" />
+    <Content Include="Content\site.css" />
+    <Content Include="Font\fontawesome-webfont.svg" />
+    <Content Include="Font\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\BG.png" />
+    <Content Include="Script\bootstrap.js" />
+    <Content Include="Script\bootstrap.min.js" />
+    <Content Include="Script\jquery-3.1.1.js" />
+    <Content Include="Script\npm.js" />
+    <Content Include="User.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{9c77cb10-75db-4184-b75a-64e3a2c5b928}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
