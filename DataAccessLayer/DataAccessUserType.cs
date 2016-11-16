@@ -23,10 +23,10 @@ namespace DataAccessLayer
 
         public DataSet Select_UserPermit()
         {
-            //SqlDataAdapter SDA = new SqlDataAdapter("SELECT USERTYPENAME FROM USERTYPE", Con);
-            //DataSet DS = new DataSet();
-            //SDA.Fill(DS);
-            //return DS;
+            SqlDataAdapter SDA = new SqlDataAdapter("SELECT USERTYPENAME FROM USERTYPE", Con);
+            DataSet DS = new DataSet();
+            SDA.Fill(DS);
+            return DS;
 
         }
     }
