@@ -36,7 +36,7 @@ namespace DataAccessLayer
             Cmd.Connection = Con;
             Cmd.CommandText = "UPDATE [USERS] SET [USERNAME] = @USERNAME, [EMAIL] = @EMAIL, [USERPASS] = @USERPASS, [USERTYPEID] = @USERTYPEID WHERE [USERID] = @USERID";
             Cmd.CommandType = CommandType.Text;
-            Cmd.ExecuteNonQuery();
+            Cmd.ExecuteNonQuery(); 
         }
 
         public void Delete_User(SqlCommand Cmd)
